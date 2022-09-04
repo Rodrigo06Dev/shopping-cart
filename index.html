@@ -34,7 +34,7 @@
                 <img src="./img/ver-todo.png" alt="">
                 <p>Ver Todo</p>
             </a>
-            <a href="#">
+            <a href="#" >
                 <img src="./img/ps4.png" alt="">
                 <p>PS4</p>
             </a>
@@ -54,89 +54,12 @@
             </a>
         </div>
         
-        
-        <div class="conteiner__store">
-            <div class="conteiner__store__card">
-                <div class="conteiner__store__card__img">
-                    <img src="./img/pc-1.jpg" alt="">
-                </div>
-                <div class="conteiner__store__card__des" id="id">
-                    <h2>descripcion</h2>
-                    <p>$precio</p>
-                    <p>stock</p>
-                    <button>agregar</button>                
-                </div>                
-            </div>
-            <div class="conteiner__store__card">
-                <div class="conteiner__store__card__img">
-                    <img src="./img/pc-1.jpg" alt="">
-                </div>
-                <div class="conteiner__store__card__des" id="id">
-                    <h2>descripcion</h2>
-                    <p>$precio</p>
-                    <p>stock</p>
-                    <button>agregar</button>                
-                </div>                
-            </div> 
-            <div class="conteiner__store__card">
-                <div class="conteiner__store__card__img">
-                    <img src="./img/pc-1.jpg" alt="">
-                </div>
-                <div class="conteiner__store__card__des" id="id">
-                    <h2>descripcion</h2>
-                    <p>$precio</p>
-                    <p>stock</p>
-                    <button>agregar</button>                
-                </div>                
-            </div> 
-            <div class="conteiner__store__card">
-                <div class="conteiner__store__card__img">
-                    <img src="./img/pc-1.jpg" alt="">
-                </div>
-                <div class="conteiner__store__card__des" id="id">
-                    <h2>descripcion</h2>
-                    <p>$precio</p>
-                    <p>stock</p>
-                    <button>agregar</button>                
-                </div>                
-            </div> 
-            <div class="conteiner__store__card">
-                <div class="conteiner__store__card__img">
-                    <img src="./img/pc-1.jpg" alt="">
-                </div>
-                <div class="conteiner__store__card__des" id="id">
-                    <h2>descripcion</h2>
-                    <p>$precio</p>
-                    <p>stock</p>
-                    <button>agregar</button>                
-                </div>                
-            </div> 
-            <div class="conteiner__store__card">
-                <div class="conteiner__store__card__img">
-                    <img src="./img/pc-1.jpg" alt="">
-                </div>
-                <div class="conteiner__store__card__des" id="id">
-                    <h2>descripcion</h2>
-                    <p>$precio</p>
-                    <p>stock</p>
-                    <button>agregar</button>                
-                </div>                
-            </div>                   
+    <!-- her show all products -->
+        <div class="conteiner__store" id="conteiner__store">
+                            
         </div>
-        
-        
-        
-        <div class="conteiner__top-sellers">
-            <h2>Top sellers</h2>
-            <ul>
-                <li><i class='bx bxs-badge-dollar'></i><img src="./img/ps4-3.jpg" alt="bs1"></li>
-                <li><i class='bx bxs-badge-dollar'></i><img src="./img/xb-2.jpg" alt="bs2"></li>
-                <li><i class='bx bxs-badge-dollar'></i><img src="./img/nw-4.jpg" alt="bs3"></li>
-                <li><i class='bx bxs-badge-dollar'></i><img src="./img/pc-2.jpg" alt="bs4"></li>
-                <li><i class='bx bxs-badge-dollar'></i><img src="./img/pc-3.jpg" alt="bs5"></li>
-            </ul>
-        </div>
-        <div class="conteiner__nav-shop">
+    <!-- navbar of cart shopping -->
+        <div class="conteiner__nav-shop" id="conteiner__nav-shop">
             <div class="conteiner__nav-shop__item">
                 <i class='bx bx-category'></i>
                 <p><small>Category</small></p>
@@ -146,11 +69,24 @@
                 <p><small>Best Sellers</small></p>
             </div>
             <div class="conteiner__nav-shop__item">
-                <i class='bx bxs-cart-alt'></i>
+                <i class='bx bxs-cart-alt' id="icon-cart"></i>
                 <p><small>Cart</small></p>
             </div>
         </div>
+    <!-- contenedor del carrito de compras -->
+        <div class="conteiner__cart"  id="conteiner__cart">
+            <div class="conteiner__cart-title">
+                <i class='bx bx-arrow-back' id="icon-back"></i>
+                <h2>Shopping Cart</h2>
+            </div>
+            <div class="conteiner_cart-body" id="conteiner_cart-body">
+                
+            </div>
+            <div class="conteiner_cart-total">
+            <h3>Total: <span id="total"></span></h3>
+            </div>
+        </div>
     </main>
-    <script src="main.js"></script>
+    <script src="main.js" type="module"></script>
 </body>
 </html>
