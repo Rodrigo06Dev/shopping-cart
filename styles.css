@@ -124,6 +124,7 @@ body{
     justify-content: space-around;
     color: #2B4865;
     font-weight: 600;
+    font-size: 20px;
 }
 
 .conteiner__store__card i{
@@ -151,6 +152,12 @@ body{
 }
 .conteiner__nav-shop__item i{
     font-size: 30px;
+    color: #000;
+}
+.conteiner__nav-shop__item p{
+    font-weight: 600;
+    font-size: 20px;
+
 }
 
 .conteiner__cart{
@@ -211,21 +218,24 @@ body{
 .item_cart-options{
     grid-area: amount;
     margin: auto;
-    font-size: 2em;
+    font-size: 1.5em;
     color: #2B4865;
+    display: flex;
+    gap: 1em;
     
     
 }
 .item_cart-options span{
     font-weight: 600;
+    font-size: 1.5;
     
 }
 .conteiner_cart-total {
     height: 10%;
-    background-color: green;
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: xx-large;
 }
 .content_cart-show {
     transform: translateX(0);

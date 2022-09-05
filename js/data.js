@@ -97,7 +97,7 @@ export const products = [
     },
     {   
         id : 13,
-        name : "Street Fighter",
+        name : "FarCry 6",
         price : 900,
         stock: 10,
         consola: "xb",
@@ -105,7 +105,7 @@ export const products = [
     },
     {   
         id : 14,
-        name : "Street Fighter",
+        name : "Fortnite",
         price : 900,
         stock: 10,
         consola: "xb",
@@ -113,7 +113,7 @@ export const products = [
     },
     {   
         id : 15,
-        name : "Street Fighter",
+        name : "Halo Infinite",
         price : 900,
         stock: 10,
         consola: "xb",
@@ -121,7 +121,7 @@ export const products = [
     },
     {   
         id : 16,
-        name : "Street Fighter",
+        name : "Avengers Lego",
         price : 900,
         stock: 10,
         consola: "xb",
