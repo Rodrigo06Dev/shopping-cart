@@ -1,5 +1,5 @@
-import { products } from "./js/data.js";
-import {printProducts, printOnCart, printCategory, cart} from "./js/layout.js"
+import { products } from "./data.js";
+import {printProducts, printOnCart, printCategory, cart} from "./layout.js"
 
 
 const conteinerStore = document.querySelector("#conteiner__store");
@@ -48,25 +48,25 @@ conteinerCartBody.addEventListener("click", (e) => {
     if(e.target.classList.contains("bx-trash")){
         delete cart[idGame];
     }
-    printOnCart()
+    printOnCart();
 })
 
 
 
 conteinerCategorias.addEventListener("click", (e) => {
     if(e.target.classList.contains("all")){
-        printProducts()
+        printProducts();
     }
     if(e.target.classList.contains("ps4")){
-        printCategory("ps4")
+        printCategory("ps4");
     }
     if(e.target.classList.contains("xb")){
-        printCategory("xb")
+        printCategory("xb");
     }
     if(e.target.classList.contains("ns")){
-        printCategory("ns")
+        printCategory("ns");
     }
     if(e.target.classList.contains("pc")){
-        printCategory("pc")
+        printCategory("pc");
     }
 })
