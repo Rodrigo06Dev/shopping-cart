@@ -137,7 +137,7 @@ body{
 }
 
 .conteiner__cart{
-    width: 100vw;
+    width: 50vw;
     height: 100vh;
     background-color: #0096FF;
     z-index: 2000;  

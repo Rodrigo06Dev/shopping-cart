@@ -45,7 +45,7 @@ export const products = [
         price : 900,
         stock: 10,
         consola: "pc",
-        url: "./img/pc-1.jpg"
+        url: "./img/pc-2.jpg"
     },
     {   
         id : 7,
@@ -53,7 +53,7 @@ export const products = [
         price : 900,
         stock: 10,
         consola: "pc",
-        url: "./img/pc-1.jpg"
+        url: "./img/pc-3.jpg"
     },
     {   
         id : 8,
@@ -61,7 +61,7 @@ export const products = [
         price : 900,
         stock: 10,
         consola: "pc",
-        url: "./img/pc-1.jpg"
+        url: "./img/pc-4.jpg"
     },
     {   
         id : 9,

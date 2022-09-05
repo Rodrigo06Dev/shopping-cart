@@ -1,7 +1,7 @@
-iconCart = document.querySelector('#icon-cart');
-conteinerCart = document.querySelector("#conteiner__cart");
-conteinerNavShop = document.querySelector("#conteiner__nav-shop");
-iconBack = document.querySelector("#icon-back"); 
+const iconCart = document.querySelector('#icon-cart');
+const conteinerCart = document.querySelector("#conteiner__cart");
+const conteinerNavShop = document.querySelector("#conteiner__nav-shop");
+const iconBack = document.querySelector("#icon-back"); 
 
 iconCart.addEventListener('click',() => {
     conteinerCart.classList.toggle("content_cart-show");
