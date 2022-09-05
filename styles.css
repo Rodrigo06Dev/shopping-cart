@@ -1,9 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,300;0,400;0,600;1,200&display=swap');
 :root{
-    --color-title: #000;
-    --color-text: grey;
-    --color-price: red;
-    --color-botton: orange;
+    --color-body: #EBEBEB;
+    --color-price: #2B4865;
+    --color-navbar: #10b4b4;
+    --color-navbarShop: #10b4b480;
+    --color-bgcategory: #ffffff50;
+    --color-bg-hover-category: #0096FF;
     --font-size: 18px;
     --margin-btm: 20px;
     font-family: 'Titillium Web', sans-serif; 
@@ -23,7 +25,7 @@ img{
     display: block;
 }
 body{
-    background-color: #EBEBEB
+    background-color: var(--color-body);
 }
 
 .container{
@@ -34,7 +36,7 @@ body{
 .conteiner__nav{
     width: 100%;
     height: 65px;
-    background-color: #10b4b4;
+    background-color: var(--color-navbar);
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -72,11 +74,13 @@ body{
     height: 100%;
     
 }
-
+.conteiner__categorias-title{
+    padding-left: 1em;
+}
 .conteiner__categorias{
     width: 100%;
     display: grid;
-    background-color: #ffffff50;
+    background-color: var(--color-bgcategory);
     grid-template-columns: repeat(5,1fr);
 
 }
@@ -91,7 +95,7 @@ body{
     
 }
 .conteiner__categorias a:hover{
-    background-color: #0096FF;
+    background-color: var(--color-bg-hover-category);
 }
 
 .conteiner__categorias img{
@@ -122,7 +126,7 @@ body{
 .container__store__card-details{
     display: flex;
     justify-content: space-around;
-    color: #2B4865;
+    color: var(--color-price);
     font-weight: 600;
     font-size: 20px;
 }
@@ -137,6 +141,7 @@ body{
 .conteiner__bestSeller{
     width: 300px;
     margin-bottom: 7em;
+ 
 }
 .conteiner__bestSeller h2{
     text-align: center;
@@ -162,7 +167,7 @@ body{
     bottom: 0;
     margin: auto;
     padding: 0.5rem 1rem;
-    background-color: #10b4b480;
+    background-color: var(--color-navbarShop);
 }
 .conteiner__nav-shop__item{
     display: flex;
