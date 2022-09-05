@@ -1,7 +1,9 @@
 import { products } from "./data.js";
 const conteinerStore = document.querySelector("#conteiner__store");
-const conteinerCartBody = document.querySelector("#conteiner_cart-body")
+const conteinerCartBody = document.querySelector("#conteiner_cart-body");
+const swiperWrapper = document.querySelector(".swiper-wrapper");
 const total = document.querySelector("#total");
+const accumulatedCart = document.querySelector(".conteiner__nav-shop__item-accumulated");
 const cart = {};
 
 
@@ -29,6 +31,7 @@ function printProducts(){
 function printOnCart(){
     let payment = 0;
     let html = "";
+    let accumulated = 0;
     const arrayCart = Object.values(cart);
     arrayCart.forEach(({id, name, url, amount, price}) =>{
         html += `
@@ -45,10 +48,12 @@ function printOnCart(){
                 
             </div>
     </div>`;
+        accumulated += amount;
         payment += (amount * price)
     })
     conteinerCartBody.innerHTML = html
     total.textContent = payment;
+    accumulatedCart.textContent = accumulated;
 }
 
 function printCategory(category){
@@ -75,4 +80,20 @@ function printCategory(category){
     conteinerStore.innerHTML = html;    
 } 
 
-export {printProducts, printOnCart, printCategory, cart}
+function printBestSellers(){
+    let html = "";
+    products.forEach(({name, url}) => {
+        html += `<div class="conteiner__bestSeller__item swiper-slide">
+        <div class="item__img">
+            <img src="${url}" alt="">
+        </div>
+        <div class="item__info">
+            <p><b>${name}</b></p>
+        </div>
+        </div>`
+    })
+    swiperWrapper.innerHTML = html;
+    console.log(swiperWrapper);
+}
+
+export {printProducts, printOnCart, printCategory, printBestSellers, cart, accumulatedCart}

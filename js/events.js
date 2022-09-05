@@ -14,9 +14,9 @@ conteinerStore.addEventListener("click", (e) => {
         const game = products.find((item) => item.id === idGame);
       
 
-        if(cart[idGame]){
+        if(cart[idGame] && cart[idGame].amount < 10){
             cart[idGame].amount ++;
-        }else{
+        }else if(!cart[idGame]){
             cart[idGame] = game;
             cart[idGame].amount = 1
         }

@@ -4,6 +4,8 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+/>
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="styles.css">
     <title>Document</title>
@@ -59,6 +61,14 @@
         <div class="conteiner__store" id="conteiner__store">
                             
         </div>
+    <!--Slider Best seller  -->
+        <div class="conteiner__bestSeller swiper">
+            <h2>Best Sellers</h2>
+            <div class="swiper-wrapper">
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+        </div>
     <!-- navbar of cart shopping -->
         <div class="conteiner__nav-shop" id="conteiner__nav-shop">
             <div class="conteiner__nav-shop__item">
@@ -72,10 +82,11 @@
             <div class="conteiner__nav-shop__item">
                 <i class='bx bxs-cart-alt' id="icon-cart"></i>
                 <p><small>Cart</small></p>
+                <div class="conteiner__nav-shop__item-accumulated accumulated-show"></div>
             </div>
         </div>
     <!-- contenedor del carrito de compras -->
-        <div class="conteiner__cart"  id="conteiner__cart">
+        <div class="conteiner__cart"  id="conteiner__cart" >
             <div class="conteiner__cart-title">
                 <i class='bx bx-arrow-back' id="icon-back"></i>
                 <h2>Shopping Cart</h2>
@@ -88,6 +99,16 @@
             </div>
         </div>
     </main>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+    // Navigation arrows
+        navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+    },
+    });
+    </script>
     <script src="main.js" type="module"></script>
 </body>
 </html>

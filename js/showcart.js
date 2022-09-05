@@ -1,3 +1,4 @@
+
 const iconCart = document.querySelector('#icon-cart');
 const conteinerCart = document.querySelector("#conteiner__cart");
 const conteinerNavShop = document.querySelector("#conteiner__nav-shop");

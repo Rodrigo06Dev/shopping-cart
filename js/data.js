@@ -121,7 +121,7 @@ export const products = [
     },
     {   
         id : 16,
-        name : "Avengers Lego",
+        name : "Avengers",
         price : 900,
         stock: 10,
         consola: "xb",

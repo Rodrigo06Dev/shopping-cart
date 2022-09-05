@@ -134,6 +134,25 @@ body{
     padding-top: 1em;
 }
 
+.conteiner__bestSeller{
+    width: 300px;
+    margin-bottom: 7em;
+}
+.conteiner__bestSeller h2{
+    text-align: center;
+    margin-bottom: var(--margin-btm);
+}
+.conteiner__bestSeller__item{
+    max-width: 100px;
+    min-height: 150px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.item__info{
+    text-align: center;
+}
 .conteiner__nav-shop{
     width: 100%;
     display: flex;
@@ -149,6 +168,7 @@ body{
     display: flex;
     flex-direction: column;
     align-items: center;
+    position: relative;
 }
 .conteiner__nav-shop__item i{
     font-size: 30px;
@@ -158,6 +178,18 @@ body{
     font-weight: 600;
     font-size: 20px;
 
+}
+.conteiner__nav-shop__item-accumulated{
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    background-color: #000;
+    position: absolute;
+    bottom: 3em;
+    left: 1.5em;
+    text-align: center;
+    font-weight: 700;
+    color: #fff;
 }
 
 .conteiner__cart{
@@ -179,6 +211,7 @@ body{
     height: 10%;
     display: flex;
     justify-content: space-between;
+    padding: 0 1em;
 }
 
 .conteiner__cart-title i{
@@ -257,4 +290,57 @@ body{
 
     80% {margin-left: -300%;}
     100% {margin-left: -300%;}
+}
+
+@media (min-width: 700px){
+    .conteiner__slider{
+        width: 100%;
+        height: 200px; 
+        overflow: hidden; 
+        margin-bottom: var(--margin-btm);
+        box-shadow: 2px 8px 15px -1px rgba(0,0,0,0.94);
+    
+        
+    }
+    .conteiner__slider ul{
+        display: flex;
+        width: 200%;
+        height: 100%;
+        animation: slider 10s infinite alternate ease-in;
+    }
+    
+    .conteiner__slider li{
+        width: 50%;
+        
+    }
+
+    .conteiner__nav-shop{
+        justify-content: space-around;
+    }
+
+    .conteiner__cart{
+        width: 50vw;
+        
+    }
+
+    .conteiner__bestSeller{
+        width: 700px;
+    }
+
+
+
+    @keyframes slider {
+        0% {margin-left: 0;}
+        20% {margin-left: 0;}
+    
+        25% {margin-left: -100%;}
+        45% {margin-left: -100%;}
+    
+        50% {margin-left: 0;}
+        75% {margin-left: 0;}
+    
+        80% {margin-left: -100%;}
+        100% {margin-left: -100%;}
+        
+    }
 }
