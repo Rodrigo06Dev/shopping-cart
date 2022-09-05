@@ -42,6 +42,7 @@ function printOnCart(){
                 <span id="amount">${amount}</span>
                 <i class='bx bx-plus-medical'></i>
                 <i class='bx bx-trash'></i>
+                
             </div>
     </div>`;
         payment += (amount * price)
