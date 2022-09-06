@@ -4,6 +4,7 @@ const conteinerCartBody = document.querySelector("#conteiner_cart-body");
 const swiperWrapper = document.querySelector(".swiper-wrapper");
 const total = document.querySelector("#total");
 const accumulatedCart = document.querySelector(".conteiner__nav-shop__item-accumulated");
+const conteinerCartEmpty = document.querySelector("#conteiner__cart__empty")
 const cart = {};
 
 
@@ -54,6 +55,12 @@ function printOnCart(){
     conteinerCartBody.innerHTML = html
     total.textContent = payment;
     accumulatedCart.textContent = accumulated;
+    if(accumulated > 0){
+        conteinerCartEmpty.style.display = "none";
+    }else{
+        conteinerCartEmpty.style.display = "block";
+
+    }
 }
 
 function printCategory(category){
